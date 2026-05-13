@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | MYORG</title>
+    <meta name="description" content="Volunteer, partner, or become a member of MYORG. Join us in making a difference in Ave District.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fas fa-hands-holding-circle"></i>
+                MYORG
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="programs.html" class="nav-link">Programs</a></li>
+                    <li><a href="stories.html" class="nav-link">Stories</a></li>
+                    <li><a href="news.html" class="nav-link">News</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="donate.html" class="btn btn-primary">Donate</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="section bg-light" style="padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1>Get Involved</h1>
+            <p>Be the change you want to see in the community</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-hands-helping fa-3x" style="color: var(--primary-orange); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Volunteer</h3>
+                        <p class="card-text">Share your skills and time. We need trainers, mentors, and field assistants.</p>
+                        <a href="#volunteer-form" class="btn btn-outline" style="color: var(--primary-blue); border-color: var(--primary-blue);">Apply Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-handshake fa-3x" style="color: var(--primary-green); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Partner</h3>
+                        <p class="card-text">Collaborate with us on projects. We welcome NGOs, corporate partners, and government agencies.</p>
+                        <a href="contact.html" class="btn btn-outline" style="color: var(--primary-blue); border-color: var(--primary-blue);">Contact Us</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x" style="color: var(--primary-blue); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Membership</h3>
+                        <p class="card-text">Become a registered member of MYORG and participate in our general assembly and decision making.</p>
+                        <a href="contact.html" class="btn btn-outline" style="color: var(--primary-blue); border-color: var(--primary-blue);">Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteer-form" class="section bg-light">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header">
+                <h2>Volunteer Application</h2>
+                <p class="mt-2">Fill out the form below to join our team of dedicated volunteers.</p>
+            </div>
+            
+            <form style="background: white; padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow-sm);">
+                <div class="grid-3" style="grid-template-columns: 1fr 1fr; margin-bottom: 0;">
+                    <div class="form-group">
+                        <label class="form-label">First Name *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Last Name *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Email Address *</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Phone Number *</label>
+                    <input type="tel" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Area of Interest *</label>
+                    <select class="form-control">
+                        <option>Education & Teaching</option>
+                        <option>Vocational Training</option>
+                        <option>Health & Counseling</option>
+                        <option>Administration & Logistics</option>
+                        <option>Fundraising</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Availability</label>
+                    <select class="form-control">
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Weekends Only</option>
+                        <option>Remote</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Message / Skills</label>
+                    <textarea class="form-control" rows="4" placeholder="Tell us about your skills and why you want to volunteer..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About MYORG</h3>
+                    <p>Sustainable Action for Community Development and Empowerment is dedicated to fostering self-reliant and peaceful communities in Aveland.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Ave Sub County, Ave District, Aveland</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> myorgaveland@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 MYORG. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sterling & Associates for legal consultation. Call, email, or visit our office in New York.">
+    <meta property="og:title" content="Contact Us | Sterling & Associates">
+    <meta property="og:description" content="Get in touch with our legal team. We're here to help with your legal needs.">
+    <title>Contact Us | Sterling & Associates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" data-testid="link-home">
+                <span class="logo-icon">⚖</span>
+                <span class="logo-text">Sterling & Associates</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" data-testid="button-nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-testid="link-nav-home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-testid="link-nav-about">About</a></li>
+                    <li><a href="team.html" class="nav-link" data-testid="link-nav-team">Our Team</a></li>
+                    <li><a href="practice-areas.html" class="nav-link" data-testid="link-nav-practice">Practice Areas</a></li>
+                    <li><a href="resources.html" class="nav-link" data-testid="link-nav-resources">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-testid="link-nav-contact">Contact</a></li>
+                    <li><a href="consultation.html" class="nav-link nav-cta" data-testid="link-nav-consultation">Book Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">We're here to help. Reach out to our team today.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2 class="contact-heading">Get in Touch</h2>
+                        
+                        <div class="contact-method" data-testid="contact-phone">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+15551234567" class="contact-link">(555) 123-4567</a></p>
+                                <p class="contact-note">Click to call directly</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method" data-testid="contact-email">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@sterlinglaw.com" class="contact-link">info@sterlinglaw.com</a></p>
+                                <p class="contact-note">We respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method" data-testid="contact-address">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Office Address</h3>
+                                <address>
+                                    Sterling & Associates<br>
+                                    123 Legal Plaza, Suite 500<br>
+                                    New York, NY 10001
+                                </address>
+                            </div>
+                        </div>
+
+                        <div class="contact-method" data-testid="contact-hours">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-details">
+                                <h3>Office Hours</h3>
+                                <p>Monday – Friday: 8:30 AM – 6:00 PM</p>
+                                <p>Saturday: 9:00 AM – 1:00 PM (by appointment)</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method" data-testid="contact-whatsapp">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/15551234567" class="contact-link" target="_blank" rel="noopener">Message us on WhatsApp</a></p>
+                                <p class="contact-note">Quick responses during business hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2 class="contact-heading">Send Us a Message</h2>
+                        <form id="contactForm" class="contact-form" data-testid="form-contact">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" required data-testid="input-name">
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" required data-testid="input-email">
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" data-testid="input-phone">
+                                <span class="form-error" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                                <select id="subject" name="subject" class="form-select" required data-testid="select-subject">
+                                    <option value="">Select a subject...</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="corporate">Corporate Law</option>
+                                    <option value="family">Family Law</option>
+                                    <option value="criminal">Criminal Defense</option>
+                                    <option value="realestate">Real Estate</option>
+                                    <option value="ip">Intellectual Property</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="form-error" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required data-testid="textarea-message"></textarea>
+                                <span class="form-error" id="messageError"></span>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" required data-testid="checkbox-privacy">
+                                <label for="privacy" class="checkbox-label">I understand that submitting this form does not create an attorney-client relationship. <span class="required">*</span></label>
+                                <span class="form-error" id="privacyError"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" data-testid="button-submit-contact">Send Message</button>
+                        </form>
+
+                        <div id="formSuccess" class="form-success" style="display: none;" data-testid="text-form-success">
+                            <div class="success-icon">✓</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting Sterling & Associates. We will review your message and respond within 24 business hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Find Our Office</h2>
+                    <p class="section-subtitle">Conveniently located in downtown New York</p>
+                </header>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076794379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle%20NYC!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Office Location"
+                        data-testid="map-contact">
+                    </iframe>
+                </div>
+                <div class="directions-note">
+                    <p><strong>Parking:</strong> Validated parking available in the building garage. Street parking also available on nearby streets.</p>
+                    <p><strong>Public Transit:</strong> 5-minute walk from Penn Station. Accessible via 1, 2, 3, A, C, E subway lines.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section-cta-block">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready for a Formal Consultation?</h2>
+                    <p class="cta-text">Book a consultation with one of our attorneys to discuss your legal matter in detail.</p>
+                    <a href="consultation.html" class="btn btn-primary btn-lg" data-testid="button-book-consultation">Book Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-icon">⚖</span>
+                        <span class="logo-text">Sterling & Associates</span>
+                    </a>
+                    <p class="footer-tagline">Trusted legal counsel for over 25 years.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Attorneys</a></li>
+                        <li><a href="practice-areas.html">Practice Areas</a></li>
+                        <li><a href="resources.html">Client Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Practice Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="practice-areas.html#corporate">Corporate Law</a></li>
+                        <li><a href="practice-areas.html#family">Family Law</a></li>
+                        <li><a href="practice-areas.html#criminal">Criminal Defense</a></li>
+                        <li><a href="practice-areas.html#realestate">Real Estate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <p>(555) 123-4567</p>
+                    <p>info@sterlinglaw.com</p>
+                    <p>123 Legal Plaza, Suite 500<br>New York, NY 10001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-legal">© 2026 Sterling & Associates. All rights reserved.</p>
+                <p class="footer-disclaimer">This website is for informational purposes only and does not constitute legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

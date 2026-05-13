@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - MYORG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="/" class="logo">
+                <i class="fas fa-hands-holding-circle"></i>
+                MYORG <span>Aveland</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/programs.html">Programs</a></li>
+                <li><a href="/stories.html">Stories</a></li>
+                <li><a href="/news.html">News</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/donate.html" class="active btn btn-primary">Donate Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section section-bg-light" style="padding-top: 120px;">
+        <div class="container text-center">
+            <h1 class="mb-20">Support Our Cause</h1>
+            <p style="max-width: 700px; margin: 0 auto;">Your generous donation directly supports our community programs in Ave District. Together, we can build a sustainable future.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                
+                <!-- Donation Form -->
+                <div>
+                    <div style="background: white; padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h2 class="mb-20" style="color: var(--color-green);">Make a Donation</h2>
+                        
+                        <div class="mb-20">
+                            <label style="display: block; margin-bottom: 10px; font-weight: 600;">Choose an amount:</label>
+                            <div class="donation-options">
+                                <button class="donation-btn" data-amount="20">$20</button>
+                                <button class="donation-btn" data-amount="50">$50</button>
+                                <button class="donation-btn" data-amount="100">$100</button>
+                                <button class="donation-btn" data-amount="200">$200</button>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <label style="font-size: 0.9rem;">Or enter custom amount:</label>
+                                <input type="number" id="custom-amount" class="form-control" placeholder="USD Amount">
+                            </div>
+                        </div>
+
+                        <div style="background: var(--color-light-gray); padding: 15px; border-radius: var(--radius-md); margin-bottom: 20px;">
+                            <p id="impact-text" style="font-weight: 500; color: var(--color-dark-gray);">Select an amount to see your impact.</p>
+                        </div>
+
+                        <div class="mb-20">
+                            <label style="display: block; margin-bottom: 10px; font-weight: 600;">Frequency:</label>
+                            <div style="display: flex; gap: 20px;">
+                                <label><input type="radio" name="frequency" checked> One-time</label>
+                                <label><input type="radio" name="frequency"> Monthly</label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary" style="width: 100%;">Proceed to Payment</button>
+                        <p style="text-align: center; font-size: 0.8rem; margin-top: 10px; color: #777;">Secure payment processing via Stripe/PayPal (Mock)</p>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div>
+                    <h2 class="mb-20">Other Ways to Give</h2>
+                    <div class="card mb-20" style="box-shadow: none; border: 1px solid #eee;">
+                        <div class="card-content">
+                            <h4 style="color: var(--color-orange);">In-Kind Donations</h4>
+                            <p>We accept scholastic materials, computers, sewing machines, and medical supplies. Please contact us to arrange delivery.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-20" style="box-shadow: none; border: 1px solid #eee;">
+                        <div class="card-content">
+                            <h4 style="color: var(--color-blue);">Corporate Sponsorship</h4>
+                            <p>Partner with us for CSR initiatives. We offer branded partnerships and detailed impact reporting.</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px;">
+                        <h4>Bank Transfer Details</h4>
+                        <p><strong>Bank:</strong> Stanbic Bank Aveland</p>
+                        <p><strong>Account Name:</strong> MYORG Aveland</p>
+                        <p><strong>Account Number:</strong> 1234567890</p>
+                        <p><strong>Branch:</strong> Ave Branch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo mb-20">
+                        <i class="fas fa-hands-holding-circle"></i>
+                        MYORG <span>Aveland</span>
+                    </div>
+                    <p>Ave Sub County, Ave District, Aveland</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: myorgaveland@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/programs.html">Our Programs</a></li>
+                        <li><a href="/team.html">Our Team</a></li>
+                        <li><a href="/join.html">Get Involved</a></li>
+                        <li><a href="/donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links mb-20">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="/donate.html" class="btn btn-primary">Support Our Work</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Sustainable Action for Community Development and Empowerment (MYORG). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

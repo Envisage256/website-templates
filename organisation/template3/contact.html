@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MYORG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo"><span class="logo-text">MYORG</span></a>
+            <button class="mobile-toggle" aria-label="Toggle Menu"><i data-lucide="menu"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="stories.html">Impact</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="donate.html" class="btn btn-primary">Donate Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="height: 40vh;">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="container section-padding">
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display:flex; gap:1rem; margin-bottom:1rem;">
+                            <i data-lucide="map-pin" class="icon-primary" style="width:24px; height:24px;"></i>
+                            <p>Ave Sub County, Ave District, Aveland</p>
+                        </div>
+                        <div style="display:flex; gap:1rem; margin-bottom:1rem;">
+                            <i data-lucide="phone" class="icon-primary" style="width:24px; height:24px;"></i>
+                            <p>(555) 123-4567</p>
+                        </div>
+                        <div style="display:flex; gap:1rem; margin-bottom:1rem;">
+                            <i data-lucide="mail" class="icon-primary" style="width:24px; height:24px;"></i>
+                            <p>myorgaveland@gmail.com</p>
+                        </div>
+                    </div>
+                    <div style="height: 300px; background: #eee; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                        <p style="color:#666">Map Placeholder (Ave District)</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="section-title">Send a Message</h2>
+                    <form id="contactForm">
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display:block; margin-bottom:0.5rem;">Full Name</label>
+                            <input type="text" placeholder="Your Name" style="width:100%; padding:0.75rem; border:1px solid var(--border); border-radius:4px;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display:block; margin-bottom:0.5rem;">Email Address</label>
+                            <input type="email" placeholder="your@email.com" style="width:100%; padding:0.75rem; border:1px solid var(--border); border-radius:4px;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display:block; margin-bottom:0.5rem;">Message</label>
+                            <textarea placeholder="How can we help?" style="width:100%; padding:0.75rem; border:1px solid var(--border); border-radius:4px; height:150px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MYORG. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

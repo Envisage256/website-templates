@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events | MYORG</title>
+    <meta name="description" content="Stay updated with the latest news, events, and reports from MYORG.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fas fa-hands-holding-circle"></i>
+                MYORG
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="programs.html" class="nav-link">Programs</a></li>
+                    <li><a href="stories.html" class="nav-link">Stories</a></li>
+                    <li><a href="news.html" class="nav-link active">News</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="donate.html" class="btn btn-primary">Donate</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="section bg-light" style="padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1>News & Updates</h1>
+            <p>What's happening in our community</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <!-- Filters -->
+            <div style="margin-bottom: 2rem; display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+                <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">All</button>
+                <button class="btn btn-outline" style="color: #666; border-color: #ddd; padding: 0.5rem 1rem; font-size: 0.9rem;">Events</button>
+                <button class="btn btn-outline" style="color: #666; border-color: #ddd; padding: 0.5rem 1rem; font-size: 0.9rem;">Updates</button>
+                <button class="btn btn-outline" style="color: #666; border-color: #ddd; padding: 0.5rem 1rem; font-size: 0.9rem;">Reports</button>
+            </div>
+
+            <div class="grid-3">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="News 1" class="card-img">
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #666; margin-bottom: 0.5rem;">
+                            <span>Oct 15, 2026</span>
+                            <span>Events</span>
+                        </div>
+                        <h3 class="card-title">Launch of New Skills Center</h3>
+                        <p class="card-text">We are thrilled to open our new vocational training center in Ave Sub County. This facility will train 200 youths annually in carpentry and tailoring.</p>
+                        <a href="#" style="color: var(--primary-blue); font-weight: 600;">Read More &rarr;</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="News 2" class="card-img">
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #666; margin-bottom: 0.5rem;">
+                            <span>Sep 22, 2026</span>
+                            <span>Updates</span>
+                        </div>
+                        <h3 class="card-title">Back to School Campaign</h3>
+                        <p class="card-text">Supporting 500 children with scholastic materials for the new term. Thanks to our partners for making this distribution possible.</p>
+                        <a href="#" style="color: var(--primary-blue); font-weight: 600;">Read More &rarr;</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="News 3" class="card-img">
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #666; margin-bottom: 0.5rem;">
+                            <span>Aug 10, 2026</span>
+                            <span>Reports</span>
+                        </div>
+                        <h3 class="card-title">Community Health Awareness</h3>
+                        <p class="card-text">Our quarterly report on community health initiatives shows a 30% increase in sanitation adoption in target villages.</p>
+                        <a href="#" style="color: var(--primary-blue); font-weight: 600;">Read More &rarr;</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="News 4" class="card-img">
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #666; margin-bottom: 0.5rem;">
+                            <span>Jul 05, 2026</span>
+                            <span>Events</span>
+                        </div>
+                        <h3 class="card-title">Annual General Meeting</h3>
+                        <p class="card-text">MYORG held its AGM yesterday, electing a new board of directors and reviewing the strategic plan for 2026.</p>
+                        <a href="#" style="color: var(--primary-blue); font-weight: 600;">Read More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 0.5rem;">
+                <a href="#" class="btn btn-outline" style="color: #666; border-color: #ddd; padding: 0.5rem 1rem;">&larr; Prev</a>
+                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem;">1</a>
+                <a href="#" class="btn btn-outline" style="color: #666; border-color: #ddd; padding: 0.5rem 1rem;">2</a>
+                <a href="#" class="btn btn-outline" style="color: #666; border-color: #ddd; padding: 0.5rem 1rem;">3</a>
+                <a href="#" class="btn btn-outline" style="color: #666; border-color: #ddd; padding: 0.5rem 1rem;">Next &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About MYORG</h3>
+                    <p>Sustainable Action for Community Development and Empowerment is dedicated to fostering self-reliant and peaceful communities in Aveland.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Ave Sub County, Ave District, Aveland</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> myorgaveland@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 MYORG. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

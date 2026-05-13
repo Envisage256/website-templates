@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - MYORG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .team-member {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+        .team-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 5px solid var(--color-light-gray);
+            transition: var(--transition);
+        }
+        .team-member:hover .team-img {
+            border-color: var(--color-orange);
+            transform: translateY(-5px);
+        }
+        .team-role {
+            color: var(--color-green);
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .team-bio {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .team-social a {
+            color: var(--color-blue);
+            margin: 0 8px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="/" class="logo">
+                <i class="fas fa-hands-holding-circle"></i>
+                MYORG <span>Aveland</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/programs.html">Programs</a></li>
+                <li><a href="/stories.html">Stories</a></li>
+                <li><a href="/news.html">News</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/donate.html" class="btn btn-primary">Donate Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section section-bg-light" style="padding-top: 120px;">
+        <div class="container text-center">
+            <h1 class="mb-20">Our Leadership</h1>
+            <p style="max-width: 700px; margin: 0 auto;">Guided by a commitment to integrity, transparency, and community empowerment, our team works every day to create a sustainable future for Ave District.</p>
+        </div>
+    </section>
+
+    <!-- message from ED -->
+    <section class="section">
+        <div class="container">
+            <div style="background: var(--color-blue); color: white; padding: 60px; border-radius: var(--radius-lg); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+                <div>
+                    <h2 style="color: white;">A Message From Our Executive Director</h2>
+                    <p style="font-size: 1.1rem; font-style: italic; opacity: 0.9;" class="mb-20">"True empowerment happens when we listen to the community. At MYORG, we don't just implement projects; we build partnerships for lasting change. Our work in Ave Sub County is just the beginning."</p>
+                    <h4>- John Doe</h4>
+                </div>
+                <div style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" style="width: 250px; height: 250px; border-radius: 50%; border: 10px solid rgba(255,255,255,0.1); object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Team -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-40">Executive Management</h2>
+            <div class="team-grid">
+                <!-- Member 1 -->
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Executive Director" class="team-img">
+                    <h3>John Doe</h3>
+                    <div class="team-role">Executive Director</div>
+                    <p class="team-bio">John leads our strategic vision and external partnerships. He holds a Masters in Development Studies and has 15 years experience in Ave District NGO sectors.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:ed@MYORG.org"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Program Manager" class="team-img">
+                    <h3>Jane Smith</h3>
+                    <div class="team-role">Program Manager</div>
+                    <p class="team-bio">Jane oversees all 7 thematic areas, ensuring project quality and impact. She specializes in community-based protection and education systems.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:programs@MYORG.org"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Finance Officer" class="team-img">
+                    <h3>Michael Okello</h3>
+                    <div class="team-role">Finance & Admin Officer</div>
+                    <p class="team-bio">Michael ensures rigorous financial management and compliance. He is a certified accountant with a focus on non-profit transparency and reporting.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:finance@MYORG.org"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Board -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center mb-40">Board of Directors</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <div style="background: #f8f9fa; padding: 30px; border-radius: var(--radius-md);">
+                    <h4>Dr. Sarah A.</h4>
+                    <p style="color: var(--color-orange); font-weight: 600; margin-bottom: 10px;">Chairperson</p>
+                    <p style="font-size: 0.9rem;">Public health specialist advising on our SRHR and welfare programs. 20 years clinical experience.</p>
+                </div>
+                <div style="background: #f8f9fa; padding: 30px; border-radius: var(--radius-md);">
+                    <h4>Mr. David B.</h4>
+                    <p style="color: var(--color-orange); font-weight: 600; margin-bottom: 10px;">Secretary</p>
+                    <p style="font-size: 0.9rem;">Retired Education Officer for Ave District, guiding our schools and child protection initiatives.</p>
+                </div>
+                <div style="background: #f8f9fa; padding: 30px; border-radius: var(--radius-md);">
+                    <h4>Ms. Grace C.</h4>
+                    <p style="color: var(--color-orange); font-weight: 600; margin-bottom: 10px;">Treasurer</p>
+                    <p style="font-size: 0.9rem;">Expert in micro-finance and cooperative management, overseeing our economic empowerment strategy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo mb-20">
+                        <i class="fas fa-hands-holding-circle"></i>
+                        MYORG <span>Aveland</span>
+                    </div>
+                    <p>Ave Sub County, Ave District, Aveland</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: myorgaveland@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/programs.html">Our Programs</a></li>
+                        <li><a href="/team.html">Our Team</a></li>
+                        <li><a href="/join.html">Get Involved</a></li>
+                        <li><a href="/donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links mb-20">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="/donate.html" class="btn btn-primary">Support Our Work</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Sustainable Action for Community Development and Empowerment (MYORG). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

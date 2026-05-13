@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a consultation with Sterling & Associates. Schedule your appointment with our experienced attorneys.">
+    <meta property="og:title" content="Book Consultation | Sterling & Associates">
+    <meta property="og:description" content="Schedule a consultation with our legal team to discuss your case.">
+    <title>Book Consultation | Sterling & Associates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" data-testid="link-home">
+                <span class="logo-icon">⚖</span>
+                <span class="logo-text">Sterling & Associates</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" data-testid="button-nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-testid="link-nav-home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-testid="link-nav-about">About</a></li>
+                    <li><a href="team.html" class="nav-link" data-testid="link-nav-team">Our Team</a></li>
+                    <li><a href="practice-areas.html" class="nav-link" data-testid="link-nav-practice">Practice Areas</a></li>
+                    <li><a href="resources.html" class="nav-link" data-testid="link-nav-resources">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link" data-testid="link-nav-contact">Contact</a></li>
+                    <li><a href="consultation.html" class="nav-link nav-cta active" data-testid="link-nav-consultation">Book Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Book a Consultation</h1>
+                <p class="page-subtitle">Take the first step toward resolving your legal matter</p>
+            </div>
+        </section>
+
+        <!-- Consultation Info -->
+        <section class="section">
+            <div class="container">
+                <div class="consultation-intro">
+                    <h2>What to Expect</h2>
+                    <p>During your initial consultation, you'll meet with one of our experienced attorneys to discuss your legal situation. We'll listen to your concerns, answer your questions, and provide an honest assessment of your options.</p>
+                </div>
+
+                <div class="consultation-grid">
+                    <!-- Consultation Details -->
+                    <div class="consultation-details">
+                        <div class="detail-card" data-testid="card-fee-policy">
+                            <h3>Consultation Fee Policy</h3>
+                            <div class="fee-info">
+                                <p><strong>Initial Consultation:</strong> $150 for the first hour</p>
+                                <p class="fee-note">This fee is credited toward your legal fees if you retain our firm.</p>
+                            </div>
+                            <div class="fee-types">
+                                <h4>Free Phone Screening</h4>
+                                <p>Not sure if you need an attorney? Call us for a free 15-minute phone screening. We'll help you understand if you need legal representation and which practice area applies to your situation.</p>
+                            </div>
+                            <div class="fee-types">
+                                <h4>Pro Bono Consultations</h4>
+                                <p>We offer free consultations for qualifying individuals who cannot afford legal services. Please inquire about our pro bono eligibility requirements.</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-card" data-testid="card-consultation-includes">
+                            <h3>Your Consultation Includes</h3>
+                            <ul class="includes-list">
+                                <li>One-on-one meeting with an experienced attorney</li>
+                                <li>Review of relevant documents you bring</li>
+                                <li>Assessment of your legal options</li>
+                                <li>Explanation of potential strategies</li>
+                                <li>Clear fee estimate if you choose to proceed</li>
+                                <li>Written summary of our discussion</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card" data-testid="card-what-to-bring">
+                            <h3>What to Bring</h3>
+                            <ul class="bring-list">
+                                <li>Any documents related to your legal matter</li>
+                                <li>A list of questions you want to ask</li>
+                                <li>Timeline of relevant events</li>
+                                <li>Names and contact information of other parties involved</li>
+                                <li>Photo ID</li>
+                            </ul>
+                        </div>
+
+                        <!-- Calendar Placeholder -->
+                        <div class="calendar-placeholder" data-testid="calendar-placeholder">
+                            <h3>Availability Calendar</h3>
+                            <div class="calendar-visual">
+                                <div class="calendar-header">
+                                    <span>◀</span>
+                                    <span>January 2026</span>
+                                    <span>▶</span>
+                                </div>
+                                <div class="calendar-grid-header">
+                                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                                </div>
+                                <div class="calendar-days">
+                                    <span class="disabled"></span><span class="disabled"></span><span class="disabled"></span><span class="disabled">1</span><span class="disabled">2</span><span class="disabled">3</span><span class="disabled">4</span>
+                                    <span class="disabled">5</span><span class="disabled">6</span><span class="disabled">7</span><span class="disabled">8</span><span class="disabled">9</span><span class="disabled">10</span><span class="disabled">11</span>
+                                    <span>12</span><span class="available">13</span><span class="available">14</span><span class="available">15</span><span class="available">16</span><span class="available">17</span><span>18</span>
+                                    <span>19</span><span class="available">20</span><span class="available">21</span><span class="available">22</span><span class="available">23</span><span class="available">24</span><span>25</span>
+                                    <span>26</span><span class="available">27</span><span class="available">28</span><span class="available">29</span><span class="available">30</span><span class="available">31</span><span></span>
+                                </div>
+                            </div>
+                            <p class="calendar-note">Select a preferred date/time in the form, and we'll confirm availability.</p>
+                        </div>
+                    </div>
+
+                    <!-- Consultation Form -->
+                    <div class="consultation-form-wrapper">
+                        <h2 class="form-heading">Request an Appointment</h2>
+                        <form id="consultationForm" class="consultation-form" data-testid="form-consultation">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name <span class="required">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required data-testid="input-firstname">
+                                    <span class="form-error" id="firstNameError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name <span class="required">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required data-testid="input-lastname">
+                                    <span class="form-error" id="lastNameError"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="consultEmail" class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="consultEmail" name="email" class="form-input" required data-testid="input-consult-email">
+                                <span class="form-error" id="consultEmailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="consultPhone" class="form-label">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="consultPhone" name="phone" class="form-input" required data-testid="input-consult-phone">
+                                <span class="form-error" id="consultPhoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="practiceArea" class="form-label">Practice Area <span class="required">*</span></label>
+                                <select id="practiceArea" name="practiceArea" class="form-select" required data-testid="select-practice-area">
+                                    <option value="">Select a practice area...</option>
+                                    <option value="corporate">Corporate Law</option>
+                                    <option value="family">Family Law</option>
+                                    <option value="criminal">Criminal Defense</option>
+                                    <option value="realestate">Real Estate Law</option>
+                                    <option value="ip">Intellectual Property</option>
+                                    <option value="unsure">Not Sure / General Inquiry</option>
+                                </select>
+                                <span class="form-error" id="practiceAreaError"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="preferredDate" class="form-label">Preferred Date <span class="required">*</span></label>
+                                    <input type="date" id="preferredDate" name="preferredDate" class="form-input" required data-testid="input-preferred-date">
+                                    <span class="form-error" id="preferredDateError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredTime" class="form-label">Preferred Time <span class="required">*</span></label>
+                                    <select id="preferredTime" name="preferredTime" class="form-select" required data-testid="select-preferred-time">
+                                        <option value="">Select a time...</option>
+                                        <option value="9:00 AM">9:00 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="1:00 PM">1:00 PM</option>
+                                        <option value="2:00 PM">2:00 PM</option>
+                                        <option value="3:00 PM">3:00 PM</option>
+                                        <option value="4:00 PM">4:00 PM</option>
+                                        <option value="5:00 PM">5:00 PM</option>
+                                    </select>
+                                    <span class="form-error" id="preferredTimeError"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="altDate" class="form-label">Alternate Date (Optional)</label>
+                                <input type="date" id="altDate" name="altDate" class="form-input" data-testid="input-alt-date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="consultType" class="form-label">Consultation Type <span class="required">*</span></label>
+                                <select id="consultType" name="consultType" class="form-select" required data-testid="select-consult-type">
+                                    <option value="">Select type...</option>
+                                    <option value="in-person">In-Person (at our office)</option>
+                                    <option value="video">Video Conference (Zoom)</option>
+                                    <option value="phone">Phone Call</option>
+                                </select>
+                                <span class="form-error" id="consultTypeError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="caseDescription" class="form-label">Brief Description of Your Legal Matter <span class="required">*</span></label>
+                                <textarea id="caseDescription" name="caseDescription" class="form-textarea" rows="4" required placeholder="Please provide a brief overview of your situation..." data-testid="textarea-case-description"></textarea>
+                                <span class="form-error" id="caseDescriptionError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="howHeard" class="form-label">How Did You Hear About Us?</label>
+                                <select id="howHeard" name="howHeard" class="form-select" data-testid="select-how-heard">
+                                    <option value="">Select...</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="referral">Personal Referral</option>
+                                    <option value="attorney-referral">Attorney Referral</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="advertisement">Advertisement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="consultPrivacy" name="privacy" required data-testid="checkbox-consult-privacy">
+                                <label for="consultPrivacy" class="checkbox-label">I understand that submitting this form does not create an attorney-client relationship and that my consultation may be subject to a fee. <span class="required">*</span></label>
+                                <span class="form-error" id="consultPrivacyError"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" data-testid="button-submit-consultation">Request Consultation</button>
+                        </form>
+
+                        <div id="consultFormSuccess" class="form-success" style="display: none;" data-testid="text-consult-success">
+                            <div class="success-icon">✓</div>
+                            <h3>Consultation Request Received!</h3>
+                            <p>Thank you for your interest in Sterling & Associates. We will contact you within one business day to confirm your appointment.</p>
+                            <p>If you need immediate assistance, please call us at <a href="tel:+15551234567">(555) 123-4567</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alternative Contact -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="alt-contact">
+                    <h2>Prefer to Call?</h2>
+                    <p>Our friendly staff is available to schedule your consultation by phone.</p>
+                    <a href="tel:+15551234567" class="btn btn-secondary btn-lg" data-testid="button-call-schedule">
+                        <span class="btn-icon">📞</span> Call (555) 123-4567
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-icon">⚖</span>
+                        <span class="logo-text">Sterling & Associates</span>
+                    </a>
+                    <p class="footer-tagline">Trusted legal counsel for over 25 years.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Attorneys</a></li>
+                        <li><a href="practice-areas.html">Practice Areas</a></li>
+                        <li><a href="resources.html">Client Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Practice Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="practice-areas.html#corporate">Corporate Law</a></li>
+                        <li><a href="practice-areas.html#family">Family Law</a></li>
+                        <li><a href="practice-areas.html#criminal">Criminal Defense</a></li>
+                        <li><a href="practice-areas.html#realestate">Real Estate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <p>(555) 123-4567</p>
+                    <p>info@sterlinglaw.com</p>
+                    <p>123 Legal Plaza, Suite 500<br>New York, NY 10001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-legal">© 2026 Sterling & Associates. All rights reserved.</p>
+                <p class="footer-disclaimer">This website is for informational purposes only and does not constitute legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - MYORG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <style>
+        details {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+        }
+        summary {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--color-blue);
+            outline: none;
+        }
+        details[open] summary {
+            margin-bottom: 20px;
+            color: var(--color-orange);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="/" class="logo">
+                <i class="fas fa-hands-holding-circle"></i>
+                MYORG <span>Aveland</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/programs.html">Programs</a></li>
+                <li><a href="/stories.html">Stories</a></li>
+                <li><a href="/news.html">News</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/donate.html" class="btn btn-primary">Donate Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section section-bg-light" style="padding-top: 120px;">
+        <div class="container text-center">
+            <h1 class="mb-20">Frequently Asked Questions</h1>
+            <p style="max-width: 700px; margin: 0 auto;">Find answers to common questions about our work, donations, and how you can get involved.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            
+            <details>
+                <summary>How can I donate to MYORG?</summary>
+                <p>You can donate through our website using the donation form on the 'Donate' page. We accept one-time and monthly contributions. We also accept in-kind donations of scholastic materials and medical supplies.</p>
+            </details>
+
+            <details>
+                <summary>Where is MYORG located?</summary>
+                <p>Our main office is located in Ave Sub County, Ave District, Aveland. We operate primarily within this region but look to expand our impact.</p>
+            </details>
+
+            <details>
+                <summary>Can I volunteer internationally?</summary>
+                <p>Yes! We welcome international volunteers who can contribute skills in education, healthcare, and organizational development. Please fill out the volunteer application form on the 'Get Involved' page.</p>
+            </details>
+
+            <details>
+                <summary>Is MYORG a registered organization?</summary>
+                <p>Yes, MYORG is fully registered as a Community-Based Organization (CBO) with the Ave District Local Government.</p>
+            </details>
+
+            <details>
+                <summary>How is my donation used?</summary>
+                <p>We are committed to transparency. 85% of all donations go directly to program implementation, while 15% covers administrative and operational costs.</p>
+            </details>
+
+            <details>
+                <summary>Can I sponsor a specific child?</summary>
+                <p>Currently, we pool donations to support schools and groups of vulnerable children to ensure equity. However, we can provide updates on the specific schools or groups your donation supports.</p>
+            </details>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo mb-20">
+                        <i class="fas fa-hands-holding-circle"></i>
+                        MYORG <span>Aveland</span>
+                    </div>
+                    <p>Ave Sub County, Ave District, Aveland</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: myorgaveland@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/programs.html">Our Programs</a></li>
+                        <li><a href="/team.html">Our Team</a></li>
+                        <li><a href="/join.html">Get Involved</a></li>
+                        <li><a href="/donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links mb-20">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="/donate.html" class="btn btn-primary">Support Our Work</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Sustainable Action for Community Development and Empowerment (MYORG). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

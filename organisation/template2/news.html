@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - MYORG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="/" class="logo">
+                <i class="fas fa-hands-holding-circle"></i>
+                MYORG <span>Aveland</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/programs.html">Programs</a></li>
+                <li><a href="/stories.html">Stories</a></li>
+                <li><a href="/news.html" class="active">News</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/donate.html" class="btn btn-primary">Donate Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section section-bg-light" style="padding-top: 120px;">
+        <div class="container text-center">
+            <h1 class="mb-20">News & Updates</h1>
+            <p style="max-width: 700px; margin: 0 auto;">Stay informed about our latest activities, events, and community announcements.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- Search & Filter -->
+            <div style="display: flex; gap: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+                <input type="text" placeholder="Search news..." class="form-control" style="flex: 1; min-width: 200px;">
+                <select class="form-control" style="width: 200px;">
+                    <option value="">All Categories</option>
+                    <option value="events">Events</option>
+                    <option value="updates">Project Updates</option>
+                    <option value="community">Community Stories</option>
+                </select>
+                <button class="btn btn-primary">Search</button>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="card-grid">
+                <!-- Post 1 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="card-content">
+                        <span style="font-size: 0.8rem; color: #999; margin-bottom: 5px; display: block;">October 15, 2023 | Events</span>
+                        <h3 class="card-title">Annual Community Dialogue Held in Ave</h3>
+                        <p class="card-text">Over 200 community members gathered to discuss issues affecting women and children. Key resolutions were made regarding...</p>
+                        <a href="#" style="color: var(--color-orange); font-weight: 600;">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="card-content">
+                        <span style="font-size: 0.8rem; color: #999; margin-bottom: 5px; display: block;">September 28, 2023 | Updates</span>
+                        <h3 class="card-title">500 Scholastic Kits Distributed</h3>
+                        <p class="card-text">MYORG successfully distributed learning materials to 5 primary schools in the district, ensuring that...</p>
+                        <a href="#" style="color: var(--color-orange); font-weight: 600;">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1590333201398-7589d873d63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="card-content">
+                        <span style="font-size: 0.8rem; color: #999; margin-bottom: 5px; display: block;">August 10, 2023 | Community</span>
+                        <h3 class="card-title">Youth Skills Training Graduation</h3>
+                        <p class="card-text">Congratulations to the 50 graduates of our tailoring and carpentry program. They are now ready to start their own...</p>
+                        <a href="#" style="color: var(--color-orange); font-weight: 600;">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 40px;">
+                <button class="btn btn-outline" style="color: var(--color-blue); border-color: #ddd;">&larr; Prev</button>
+                <button class="btn btn-primary">1</button>
+                <button class="btn btn-outline" style="color: var(--color-blue); border-color: #ddd;">2</button>
+                <button class="btn btn-outline" style="color: var(--color-blue); border-color: #ddd;">3</button>
+                <button class="btn btn-outline" style="color: var(--color-blue); border-color: #ddd;">Next &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo mb-20">
+                        <i class="fas fa-hands-holding-circle"></i>
+                        MYORG <span>Aveland</span>
+                    </div>
+                    <p>Ave Sub County, Ave District, Aveland</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: myorgaveland@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/programs.html">Our Programs</a></li>
+                        <li><a href="/team.html">Our Team</a></li>
+                        <li><a href="/join.html">Get Involved</a></li>
+                        <li><a href="/donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links mb-20">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="/donate.html" class="btn btn-primary">Support Our Work</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Sustainable Action for Community Development and Empowerment (MYORG). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
