@@ -9,8 +9,8 @@ If you are making non-template changes (docs, CI, tooling), the workflow is the 
 ## Quick start
 
 1. Fork the repository and create a feature branch from the default branch, e.g. `feat/add-templateN-in-<category>`.
-2. Under the `templates/` directory, find the category folder that matches your template (see "Categories" below). If the category folder does not exist, create it.
-3. Create a new folder for your template named using the format `template<number>` where `<number>` is the next available integer (see "Naming rules" below). Example: `templates/business/template7/`.
+2. Find the category folder that matches your template (see "Categories" below). If the category folder does not exist, create it.
+3. Create a new folder for your template named using the format `template<number>` where `<number>` is the next available integer (see "Naming rules" below). Example: `business/template7/`.
 4. Add the required files (index.html, README.md, styles.css, script.js) to the template folder root — do not add nested asset folders.
 5. Push your branch and open a pull request describing the template and including the completed checklist.
 
@@ -18,30 +18,28 @@ If you are making non-template changes (docs, CI, tooling), the workflow is the 
 
 ## Categories
 
-All templates are grouped by category. Place your template into an appropriate category folder inside `templates/`. Example category names used in the repo include:
+All templates are grouped by category. Place your template into an appropriate category folder. Example category names used in the repo include:
 
 - business
 - organisation
 - restaurants
 - education
 
-If one of these fits your template, add it there. If a suitable category does not exist, create a new category folder under `templates/` using a single-word, lowercase name (kebab-case allowed) and put your `template<number>` folder inside it.
+If one of these fits your template, add it there. If a suitable category does not exist, create a new category folder using a single-word, lowercase name (kebab-case allowed) and put your `template<number>` folder inside it.
 
 Example structure:
 
-templates/
-  business/
-    template1/
-      index.html
-      README.md
-      styles.css
-      script.js
-  restaurants/
-    template2/
-      index.html
-      README.md
-      styles.css
-      script.js
+business/  
+&emsp;template1/  
+&emsp;&emsp;&emsp;index.html  
+&emsp;&emsp;&emsp;README.md  
+&emsp;&emsp;&emsp;styles.css  
+&emsp;&emsp;&emsp;script.js  
+&emsp;template2/  
+&emsp;&emsp;&emsp;index.html  
+&emsp;&emsp;&emsp;README.md  
+&emsp;&emsp;&emsp;styles.css  
+&emsp;&emsp;&emsp;script.js  
 
 ---
 
@@ -71,14 +69,14 @@ Note: `preview.png`, `meta.json`, separate `LICENSE` files, or additional folder
 ## File content guidance
 
 - index.html: use semantic HTML, include images with `alt` text, and use relative paths (e.g., `styles.css`, `script.js`).
-- README.md: include a short description (one or two lines), dependencies (if any), and instructions to open the template locally: `open templates/<category>/templateN/index.html`.
+- README.md: include a short description (one or two lines), dependencies (if any), and instructions to open the template locally: `open <category>/templateN/index.html`.
 - styles.css and script.js: keep the files in the template root and minimize external dependencies. If you must reference a CDN (fonts, icons), document it in the README.
 
 ---
 
 ## Quality checklist (must be completed before opening a PR)
 
-- [ ] Template folder is named `template<number>` and placed inside the correct category folder under `templates/`.
+- [ ] Template folder is named `template<number>` and placed inside the correct category folder under.
 - [ ] `index.html`, `README.md`, `styles.css`, and `script.js` are present in the template folder root.
 - [ ] `index.html` opens locally and renders without missing assets (no 404s).
 - [ ] Basic accessibility: images have `alt` text, headings are semantic, and interactive elements are keyboard-accessible.
@@ -86,13 +84,13 @@ Note: `preview.png`, `meta.json`, separate `LICENSE` files, or additional folder
 - [ ] No secrets or tracking code included.
 - [ ] README documents any external resources and how to open the template locally.
 
-Include this checklist in your PR description (copy-paste and tick items).
+Include this checklist in your PR description (copy-paste and tick items). Items are ticked by placing an x between the square brackets, for example [x] 
 
 ---
 
 ## Pull request guidelines
 
-- PR title format: `Add template: templates/<category>/template<number>` or `Fix template: templates/<category>/template<number>`.
+- PR title format: `Add template: <category>/template<number>` or `Fix template: <category>/template<number>`.
 - In the PR description include:
   - A short summary of the template and its intended use case.
   - The checklist above, completed.
@@ -105,24 +103,21 @@ Maintainers will review changes; please respond to feedback and push follow-up c
 
 ## Licensing
 
-Contributions should be compatible with the repository license. You do not need to include a `LICENSE` file inside your template folder. If your template must be distributed under a different license, note that in the template's README and discuss it in the PR.
+Contributions should be compatible with the repository license. You do not need to include a `LICENSE` file inside your template folder. All templates contributed within this repository shall be distributed under the MIT License described in [LICENSE.md](LICENSE.md).
 
 ---
 
 ## Security
 
-Do not include passwords, API keys, or other secrets. If you discover a security issue, open a private issue or contact a maintainer — do NOT open a public PR with sensitive information.
+Do **NOT** submit a template or open a public PR with sensitive information.  
+Do not include passwords, API keys, or other secrets. If you discover a security issue, open a private issue or contact a maintainer.
 
 ---
 
 ## Reporting issues and discussion
 
-Open an issue for bugs or feature requests and include a minimal reproduction when possible. For discussion about new template ideas, open an issue first to avoid duplication.
+Open an issue for bugs or feature requests and include a minimal reproduction when possible. For discussion about new template ideas or features, you may open an issue first to avoid duplication.
 
 ---
-
-If you want, I can also:
-- Add a small GitHub Actions workflow that validates each `templates/*/template*/` folder contains the required files, or
-- Shorten this guide to a minimal checklist version.
 
 Thanks for contributing — we look forward to your templates!
